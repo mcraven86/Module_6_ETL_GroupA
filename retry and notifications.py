@@ -31,7 +31,7 @@ def send_failure_email(subject, body, to_email):
 def run_etl_task():
     try:
         # Import the notebook execution library
-        import papermill as pm
+        import papermill as pm 
 
         # Execute the notebook
         pm.execute_notebook(
