@@ -22,7 +22,7 @@ def send_failure_email(subject, body, to_email):
             server.starttls()
             server.login(from_email, password)
             server.sendmail(from_email, to_email, msg.as_string())
-        print("Failure email sent successfully.")
+        print("Failure email sent successfully.") 
     except Exception as e:
         print(f"Failed to send email: {e}")
 
